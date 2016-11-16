@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<TabPane fx:id="mainTab" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="corendon.HomeController">
+   <tabs>
+      <Tab text="Reiziger">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="opslaanBtn" layoutX="225.0" layoutY="251.0" mnemonicParsing="false" onAction="#opslaanButtonReiziger" prefHeight="25.0" prefWidth="150.0" text="Opslaan" />
+                  <Label layoutX="33.0" layoutY="134.0" text="Postcode" />
+                  <Label layoutX="33.0" layoutY="87.0" text="Adres" />
+                  <Label layoutX="33.0" layoutY="40.0" text="Naam" />
+                  <TextField fx:id="naamTb" layoutX="116.0" layoutY="36.0" />
+                  <TextField fx:id="adresTb" layoutX="116.0" layoutY="83.0" />
+                  <TextField fx:id="postcodeTb" layoutX="116.0" layoutY="130.0" />
+                  <Label layoutX="34.0" layoutY="177.0" text="Email" />
+                  <TextField fx:id="emailTb" layoutX="116.0" layoutY="173.0" />
+                  <TextField fx:id="telefoonTb" layoutX="391.0" layoutY="130.0" />
+                  <Label layoutX="309.0" layoutY="134.0" text="Telefoon" />
+                  <Label layoutX="309.0" layoutY="40.0" text="Woonplaats" />
+                  <TextField fx:id="woonplaatsTb" layoutX="389.0" layoutY="36.0" />
+                  <Label layoutX="309.0" layoutY="87.0" text="Land" />
+                  <TextField fx:id="landTb" layoutX="389.0" layoutY="83.0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Gevonden koffer">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ChoiceBox fx:id="gewichtGevondenCb" layoutX="172.0" layoutY="44.0" prefWidth="150.0" />
+                  <TextArea fx:id="kenmerkenGevondenTb" layoutX="173.0" layoutY="170.0" prefHeight="68.0" prefWidth="150.0" />
+                  <Label layoutX="66.0" layoutY="170.0" text="Kenmerken" />
+                  <ColorPicker fx:id="kleurGevondenCb" layoutX="174.0" layoutY="85.0" prefHeight="25.0" prefWidth="150.0" />
+                  <Label layoutX="65.0" layoutY="89.0" text="Kleur " />
+                  <Label layoutX="65.0" layoutY="48.0" text="Gewicht " />
+                  <Button fx:id="gevondenKofferOpslaan" layoutX="173.0" layoutY="270.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Opslaan" />
+                  <TextField fx:id="labelGevonden" layoutX="175.0" layoutY="125.0" />
+                  <Label layoutX="66.0" layoutY="129.0" text="Labelnummer" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab fx:id="tbVermisteKoffer" text="Vermiste Koffer">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="57.0" layoutY="184.0" text="Merk" />
+                  <TextField fx:id="merkTb" layoutX="139.0" layoutY="180.0" />
+                  <TextField fx:id="labelTb" layoutX="139.0" layoutY="132.0" />
+                  <Label layoutX="55.0" layoutY="136.0" text="Labelnummer" />
+                  <ChoiceBox fx:id="gewichtCb" layoutX="140.0" layoutY="31.0" prefWidth="150.0" />
+                  <TextArea fx:id="kenmerkenTb" layoutX="137.0" layoutY="226.0" prefHeight="68.0" prefWidth="150.0" />
+                  <Label layoutX="55.0" layoutY="226.0" text="Kenmerken" />
+                  <ColorPicker fx:id="kleurCb" layoutX="139.0" layoutY="78.0" prefHeight="25.0" prefWidth="150.0" />
+                  <Label layoutX="55.0" layoutY="82.0" text="Kleur " />
+                  <Label layoutX="57.0" layoutY="35.0" text="Gewicht " />
+                  <Label layoutX="321.0" layoutY="35.0" text="Reiziger" />
+                  <ChoiceBox fx:id="reizigerCb" layoutX="406.0" layoutY="23.0" prefWidth="150.0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+   </tabs>
+</TabPane>
